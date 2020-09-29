@@ -3,7 +3,7 @@
 #SBATCH -p common                                                                                                                                                                                                                                                               
 #SBATCH -N1                                                                                                                                                                                                                                                                     
 #SBATCH -c1                                                                                                                                                                                                                                                                     
-#SBATCH --mem=50G                                                                                                                                                                                                                                                               
+#SBATCH --mem=100G                                                                                                                                                                                                                                                               
 
 module load Python/3.8.1
 python all_code.py

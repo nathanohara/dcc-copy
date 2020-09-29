@@ -77,7 +77,7 @@ all_data = all_data[all_data['label'] != 5.0]
 all_data = all_data[all_data['label'] != 6.0]
 all_data = all_data[all_data['label'] != 7.0]
 all_data = all_data[all_data['label'].notna()]
-
+all_data.to_csv("stress_and_amusement.csv", index = False)
 
 #function that calculates the resp features, utilizing the neurokit2 package
 #returns a dataframe object that has the resp rate, mean inhale duration, standard deviation of the inhale duration,
