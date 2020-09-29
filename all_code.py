@@ -30,7 +30,7 @@ all_data = pd.DataFrame()
 
 print("Loading subject data...")
 for subjname in tqdm(subject_names):
-    subject_pickle = pd.read_pickle(f"/hpc/group/sta440/WESAD/WESAD/{subjname}/{subjname}.pkl")
+    subject_pickle = pd.read_pickle(f"/hpc/group/sta440/WESAD/{subjname}/{subjname}.pkl")
     labels = subject_pickle["label"]
     chest = subject_pickle["signal"]["chest"]
     wrist = subject_pickle["signal"]["wrist"]
